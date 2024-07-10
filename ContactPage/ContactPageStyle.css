@@ -68,52 +68,6 @@ li, #git, h2, h3, p {
     list-style: none;
 }
 
-div > a{
-    display: flex;
-    max-width: 90%;
-    min-height: 20vh;
-    margin-left: 1rem;
-    border: #110a34 0.2rem solid;
-}
-
-div img {
-    width: 100%;
-    height: auto;
-    transition: all 0.4s ease 0s;
-}
-
-div img:hover {
-    filter: blur(3px);
-    /* filter: brightness(60%); */
-}
-
-h2 {
-    padding: 0.5rem 1rem;
-    font-size: 3em;
-}
-
-h3 {
-    padding: 0.4rem 1rem;
-    font-size: 1.2em;
-}
-p {
-    font-size: 1em;
-    padding: 0 1rem 0.5rem 1rem;
-}
-
-#git {
-    font-size: 2rem;
-    user-select: none;
-    pointer-events: none;
-}
-
-#git > a {
-    text-decoration: none;
-    color: lightblue;
-    transition: all 0.3s ease 0s;
-    pointer-events: auto;
-    cursor: pointer;
-}
 
 #pageTitle{
     letter-spacing: 0.1rem;
@@ -129,6 +83,8 @@ body {
 }
 
 body > section {
+    /* TODO: adjust height later */
+    height: 80vh;
     min-height: auto;
     width: 100%;
     display: flex;
@@ -136,36 +92,6 @@ body > section {
     align-items: center;
     flex-wrap: wrap;
 }
-
-.projectCluster {
-    vertical-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: wrap;
-    margin: 5vh 0 0 0;
-    /* background-color: #110a34; */
-    width: 50%;
-    height: auto
-}
-
-.project {
-    background-color: #040315;
-    min-height: 39vh;
-    width: 39vh;
-    margin: 4rem 5% 4rem 5%;
-}
-
-.projectCluster + section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 6vh;
-    padding: 5vh 0;
-    width: 52%;
-    background-color: #040315;
-} 
-
 /* begin footer */
 
 footer {

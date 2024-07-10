@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    background: none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 8.75vh;
+    padding-top: 1.5vh;
+    background-color: #040315;
+}
+
+header a, button {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+section li a:hover, section + li a:hover, button:hover, #git > a:hover {
+    color: grey;
+}
+
+nav {
+    height: 100%;
+    user-select: none;
+}
+
+.headerNav {
+    margin: 0 3.3rem;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerNav > section {
+    margin-right: 10.3rem;
+}
+
+li, #git {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 2.8rem;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    list-style: none;
+}
+
+#git {
+    font-size: 2rem;
+    user-select: none;
+    pointer-events: none;
+}
+
+#git > a {
+    text-decoration: none;
+    color: lightblue;
+    transition: all 0.3s ease 0s;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+#pageTitle{
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+}
+
+/* end header */
+
+body {
+    background-color: #040315;
+    width: auto;
+    height: auto;
+}
+
+body > section {
+    min-height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projectCluster {
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: wrap;
+    margin: 5vh 0 0 0;
+    background-color: #110a34;
+    width: 50%;
+    height: auto
+}
+
+.project {
+    background-color: #040315;
+    height: 39vh;
+    width: 39vh;
+    margin: 4rem 5% 4rem 5%;
+}
+
+.projectCluster + section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6vh;
+    padding: 5vh 0;
+    width: 52%;
+    background-color: #040315;
+} 
+
+/* begin footer */
+
+footer {
+    /* TODO: get around flexbox bug with using min-height instead of height */
+    height: 15vh;
+    width: 100%;
+    background-color: #04001B;
+    border-top: #110a34 1px solid;
+}
+
+footer > ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer li {
+    padding: 0 0.2em;
+}
+
+ul img {
+    width: 48px;
+    height: auto;
+}

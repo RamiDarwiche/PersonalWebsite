@@ -79,6 +79,17 @@ h1 {
 }
 
 /* end header */
+p > a {
+    text-decoration: none;
+    color: lightblue;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+p > a:hover {
+    color: grey;
+}
+
 
 body {
     position: relative;
@@ -97,68 +108,30 @@ body > section {
     flex-wrap: wrap;
 }
 
-.contact {
-    min-height: 65vh;
-    width: 40%;
+.thankYou {
+    margin-top: 20vh;
+    min-height: 56.2vh;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 7vh;
     align-items: center;
-    /* background-color: #110a34; */
 }
 
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+h1 {
+    font-size: 4.5rem;
 }
 
-.flexWrapper {
-    min-height: 4vh;
-    flex-grow: 1;
-}
-
-.contact > h1 {
-    align-self: center;
-    margin-bottom: 1vh;
-    user-select: none;
-}
-
-#fname, #lname, #email, #message {
-    margin: 2vh 0;
-    min-width: 75%;
-    min-height: fit-content;
-    font-size: 2em;
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    background-color: #040315;
-    border: #110a34 2px solid;
-    padding: 0.3rem 0 0.3rem 0.6rem;
-}
-
-#message {
-    padding-bottom: 6rem;
-}
-
-#send {
-    /* TODO: clear input fields on submit */
-    min-width: 10%;
+h2 {
     font-size: 2rem;
-    margin: 1.6rem 5rem 3rem 5rem;
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    background-color: #110a34;
-    padding: 1rem;
-    border-radius: 0.4rem;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
+    padding-bottom: 5rem;
 }
 
-#send:hover {
-    color: gray;
+p {
+    font-size: 2rem;
 }
+
+
 /* begin footer */
 
 footer {

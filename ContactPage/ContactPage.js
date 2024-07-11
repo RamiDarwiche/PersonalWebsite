@@ -4,7 +4,7 @@ script.type = 'text/javascript';
 
 $(document).ready(function() {
     $("#toAbout").click(function() {
-        window.location.href = "../FrontPage/FrontPage.html#about";
+        window.location.href = "../index.html#about";
         // TODO: redirect to front page then slow scroll to about
         scrollToAbout();
     });

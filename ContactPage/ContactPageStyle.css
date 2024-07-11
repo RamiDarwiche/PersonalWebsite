@@ -59,13 +59,17 @@ nav {
     margin-right: 10.3rem;
 }
 
-li, #git, h2, h3, p {
+li, #git, h2, h3, p, h1 {
     display: inline-block;
     padding: 0 1rem;
     font-size: 2.8rem;
     color: white;
     font-family: "DM Sans", sans-serif;
     list-style: none;
+}
+
+h1 {
+    padding: 0;
 }
 
 
@@ -77,6 +81,7 @@ li, #git, h2, h3, p {
 /* end header */
 
 body {
+    position: relative;
     background-color: #040315;
     width: auto;
     height: auto;
@@ -84,13 +89,67 @@ body {
 
 body > section {
     /* TODO: adjust height later */
-    height: 80vh;
-    min-height: auto;
-    width: 100%;
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.contact {
+    min-height: 65vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 7vh;
+    align-items: center;
+    /* background-color: #110a34; */
+}
+
+.flexWrapper {
+    min-height: 4vh;
+    flex-grow: 1;
+}
+
+.contact > h1 {
+    align-self: center;
+    margin-bottom: 1vh;
+    user-select: none;
+}
+
+#fname, #lname, #email, #message {
+    margin: 2vh 0;
+    min-width: 75%;
+    min-height: fit-content;
+    font-size: 2em;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    background-color: #040315;
+    border: #110a34 2px solid;
+    padding: 0.3rem 0 0.3rem 0.6rem;
+}
+
+#message {
+    padding-bottom: 6rem;
+}
+
+#send {
+    /* TODO: clear input fields on submit */
+    font-size: 2rem;
+    margin: 1.6rem 0 3rem 0;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    background-color: #110a34;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#send:hover {
+    color: gray;
 }
 /* begin footer */
 
@@ -100,6 +159,7 @@ footer {
     width: 100%;
     background-color: #04001B;
     border-top: #110a34 1px solid;
+    margin-top: auto;
 }
 
 footer > ul {

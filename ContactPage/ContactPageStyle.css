@@ -108,6 +108,13 @@ body > section {
     /* background-color: #110a34; */
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .flexWrapper {
     min-height: 4vh;
     flex-grow: 1;

@@ -1,5 +1,5 @@
 var script = document.createElement("SCRIPT");
-script.src = 'jquery-3.7.1.min.js';
+script.src = '../jquery-3.7.1.min.js';
 script.type = 'text/javascript';
 
 $(document).ready(function() {

@@ -7,10 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="FrontPage/FrontPageStyle.css">
-    <link rel="stylesheet" href="FrontPageResponsiveStyle.css">
+    <link rel="stylesheet" href="FrontPage/FrontPageResponsiveStyle.css">
     <script src="jquery-3.7.1.min.js"></script>
     <script src="FrontPage/FrontPage.js"></script>
-    <script src="ProjectPage/ProjectPage.js"></script>
     <title>Rami Darwiche</title>
 </head>
 <body>
@@ -19,11 +18,11 @@
             <ul class="headerNav">
                 <li id="pageTitle">Rami Darwiche</li>
                 <section>
-                    <li><button type="button" id="toAbout">About</button></li>
-                    <li><a href="ProjectPage/ProjectPage.html">Projects</a></li>
-                    <li><a href="#">Something</a></li>
+                    <li class="navItem"><button type="button" id="toAbout">About</button></li>
+                    <li class="navItem"><a href="ProjectPage/ProjectPage.html">Projects</a></li>
+                    <li class="navItem"><a href="#">Something</a></li>
                 </section>
-                <li ><a id="contact" href="ContactPage/ContactPage.html">Contact</a></li>
+                <li class="navItem"><a id="contact" href="ContactPage/ContactPage.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -45,9 +44,9 @@
         </section>
     </section>
     <section class="projects">
-        <section></section>
-        <section></section>
-        <section></section>
+        <section id="firstProj"></section>
+        <section id="secondProj"></section>
+        <section id="thirdProj"></section>
     </section>
     <footer>
         <ul>

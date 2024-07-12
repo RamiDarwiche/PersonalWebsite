@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <title>Rami Darwiche | Contact</title>
     <link rel="stylesheet" href="ContactPageStyle.css">
+    <link rel="stylesheet" href="ContactPageResponsiveStyle.css">
     <script src="../jquery-3.7.1.min.js"></script>
     <script src="ContactPage.js"></script>
 </head>
@@ -17,11 +18,11 @@
             <ul class="headerNav">
                 <li id="pageTitle"><a href="../index.html">Rami Darwiche</a></li>
                 <section>
-                    <li><button type="button" id="toAbout">About</button></li>
-                    <li><a href="../ProjectPage/ProjectPage.html">Projects</a></li>
-                    <li><a href="#">Something</a></li>
+                    <li class="navItem"><button type="button" id="toAbout">About</button></li>
+                    <li class="navItem"><a href="../ProjectPage/ProjectPage.html">Projects</a></li>
+                    <li class="navItem"><a href="#">Something</a></li>
                 </section>
-                <li ><a id="contact" href="#">Contact</a></li>
+                <li class="navItem"><a id="contact" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -34,9 +35,11 @@
                 <input type="hidden" name="redirect" value="https://ramidarwiche.netlify.app/thankyoupage/thankyoupage">
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
+                <!-- TODO, reformat width for better responsiveness -->
                 <input type="text" id="fname" name="firstname" placeholder="First Name" required>
                 <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
+                <!-- TODO: replace with textarea -->
                 <input type="text" id="message" name="message" placeholder="Leave a message" required>
 
                 <button type="submit" id="send">Submit</button>

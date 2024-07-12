@@ -20,9 +20,9 @@ time, mark, audio, video, button {
 	vertical-align: baseline;
 }
 
-body {
-    min-width: auto;
-    height: auto;
+body{
+    min-width: 100%;
+    min-height: 100%;
 }
 
 /* Start header styling */
@@ -45,6 +45,7 @@ section li a:hover, section + li a:hover, button:hover {
 
 nav {
     height: 100%;
+    max-width: 100%;
     text-align: center;
     user-select: none;
 }
@@ -53,17 +54,22 @@ nav {
     margin: 0 3.3rem;
     display: flex;
     height: 100%;
+    min-width: 0;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .headerNav > section {
     margin-right: 10.3rem;
+    min-width: 0;
 }
 
 li {
+    min-width: 0;
     display: inline-block;
+    min-height: 0;
     padding: 0 1rem;
     font-size: 2.8rem;
     color: white;
@@ -132,12 +138,15 @@ p {
     vertical-align: top;
 } 
 
+/* TODO: make horizontal scroller */
+
 .projects {
-    height: 60vh;
-    max-height: 60vh;
+    min-height: fit-content;
     width: auto;
+    padding: 8vh 0;
     background-color: #04001B;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -146,11 +155,10 @@ p {
 
 .projects > section {
     /* TODO: adjust aspect ratio scaling */
-    width: 25vw;
-    height: 30vh;
-    max-width: 25vw;
+    min-height: 30vh;
+    width: 45vh;
     min-width: 15vw;
-
+    margin: 2vh;
     background-color: #110a34;
 }
 

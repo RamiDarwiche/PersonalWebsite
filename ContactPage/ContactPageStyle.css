@@ -48,7 +48,9 @@ nav {
 
 .headerNav {
     margin: 0 3.3rem;
+    min-height: 0;
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
     flex-direction: row;
     align-items: center;
@@ -56,10 +58,12 @@ nav {
 }
 
 .headerNav > section {
+    min-height: 0;
     margin-right: 10.3rem;
 }
 
 li, #git, h2, h3, p, h1 {
+    min-height: 0;
     display: inline-block;
     padding: 0 1rem;
     font-size: 2.8rem;
@@ -99,7 +103,7 @@ body > section {
 
 .contact {
     min-height: 65vh;
-    width: 40%;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

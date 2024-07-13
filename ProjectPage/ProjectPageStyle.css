@@ -37,13 +37,8 @@ header a, button, h2 > a {
     cursor: pointer;
 }
 
-section li a:hover, section + li a:hover, button:hover, #git > a:hover, h2 > a:hover {
+section li a:hover, section + li a:hover, button:hover, #git > a:hover, h2 > a:hover, .mobileNavItem > a:hover, button > a:hover {
     color: grey;
-}
-
-nav {
-    height: 100%;
-    user-select: none;
 }
 
 .headerNav {
@@ -62,6 +57,38 @@ nav {
     min-width: 0;
 }
 
+.hidden {
+    margin-top: 1vh;
+    display: none;
+    pointer-events: all;
+    align-self: center;
+}
+
+.hidden > button > img {
+    height: auto;
+    width: 4.5vw;
+}
+
+.mobileNav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mobileNavItem {
+    font-size: 2.5vw;
+    margin: 0.5% 40%;
+}
+
+#pageTitle{
+    letter-spacing: 0.1rem;
+    font-size: 3.5vw;
+    font-weight: 800;
+    pointer-events: none;
+    user-select: none;
+}
+
 li, #git, h2, h3, p {
     min-width: 0;
     display: inline-block;
@@ -72,7 +99,7 @@ li, #git, h2, h3, p {
     list-style: none;
 }
 
-div > a{
+div > a {
     display: flex;
     max-width: 90%;
     min-height: 20vh;
@@ -150,14 +177,14 @@ body > section {
     flex-flow: wrap;
     margin: 5vh 0 0 0;
     /* background-color: #110a34; */
-    width: 50%;
+    width: 65%;
     height: auto
 }
 
 .project {
     background-color: #040315;
-    min-height: 39vh;
-    width: 39vh;
+    min-height: 42vh;
+    width: 42vh;
     margin: 4rem 5% 4rem 5%;
 }
 
@@ -193,7 +220,7 @@ footer li {
     padding: 0 0.2em;
 }
 
-ul img {
+footer ul img {
     width: 48px;
     height: auto;
 }

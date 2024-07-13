@@ -1,12 +1,17 @@
 @media screen and (max-width: 1415px) {
     .navItem {display: none;}
-    .hidden {display: inline-block; width: 100px; height: auto; pointer-events: all;}
+    .hidden {display: inline-block;}
+    #pageTitle {min-width: none;}
 }
 
 @media screen and (min-width: 1415px) {
     .mobileNav {display: none;}
 }
 
+@media screen and (max-width: 533px) {
+    .headerNav{flex-direction: column; justify-content: center;} 
+    #pageTitle{margin-top: 2vh;}   
+}
 
 @media screen and (max-width: 800px) {
     .about{flex-wrap: wrap; align-items: center; justify-content: center;}

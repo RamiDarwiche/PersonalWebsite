@@ -39,7 +39,7 @@ header a, button {
     cursor: pointer;
 }
 
-section li a:hover, section + li a:hover, button:hover {
+section li a:hover, section + li a:hover, button:hover, .mobileNavItem > a:hover {
     color: grey;
 }
 
@@ -78,17 +78,32 @@ li {
 }
 
 .hidden {
-    width: 100px;
-    height: auto;
+    margin-top: 1vh;
     display: none;
+    pointer-events: all;
+    align-self: center;
+}
+
+.hidden > button > img {
+    height: auto;
+    width: 4.5vw;
 }
 
 .mobileNav {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mobileNavItem {
+    font-size: 2.5vw;
+    margin: 0.5% 40%;
 }
 
 #pageTitle{
     letter-spacing: 0.1rem;
+    font-size: 3.5vw;
     font-weight: 800;
     pointer-events: none;
     user-select: none;
@@ -195,7 +210,7 @@ footer li {
     padding: 0 0.2em;
 }
 
-ul img {
+footer ul img {
     width: 48px;
     height: auto;
 }

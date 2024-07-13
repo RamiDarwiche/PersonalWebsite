@@ -37,7 +37,7 @@ header a, button, h2 > a {
     cursor: pointer;
 }
 
-section li a:hover, section + li a:hover, button:hover, #git > a:hover, h2 > a:hover {
+section li a:hover, section + li a:hover, button:hover, #git > a:hover, h2 > a:hover, .mobileNavItem > a:hover, button > a:hover {
     color: grey;
 }
 
@@ -59,6 +59,38 @@ nav {
     margin-right: 10.3rem;
 }
 
+.hidden {
+    margin-top: 1vh;
+    display: none;
+    pointer-events: all;
+    align-self: center;
+}
+
+.hidden > button > img {
+    height: auto;
+    width: 4.5vw;
+}
+
+.mobileNav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mobileNavItem {
+    font-size: 2.5vw;
+    margin: 0.5% 40%;
+}
+
+#pageTitle{
+    letter-spacing: 0.1rem;
+    font-size: 3.5vw;
+    font-weight: 800;
+    pointer-events: none;
+    user-select: none;
+}
+
 li, #git, h2, h3, p, h1 {
     display: inline-block;
     padding: 0 1rem;
@@ -70,12 +102,6 @@ li, #git, h2, h3, p, h1 {
 
 h1 {
     padding: 0;
-}
-
-
-#pageTitle{
-    letter-spacing: 0.1rem;
-    font-weight: 800;
 }
 
 /* end header */

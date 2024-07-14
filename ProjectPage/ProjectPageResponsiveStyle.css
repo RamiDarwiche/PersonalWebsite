@@ -12,3 +12,11 @@
     #pageTitle{margin-top: 2vh; font-size: 7vw; width: fit-content; white-space: nowrap;}
     .hidden > button > img {height: auto;width: 7.5vw;}
 }
+
+@media screen and (max-width: 1130px) {
+    h2{text-align: center;}
+    .projectCluster{width: 100%;}
+    .project{width: 67vw}
+    /* TODO: scale project size better */
+    div img{width: 100%;}
+}

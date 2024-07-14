@@ -124,7 +124,10 @@ div img:hover {
 h2 {
     padding: 0.5rem 1rem;
     font-size: 2em;
-    white-space: noWrap;
+}
+
+.projTitle {
+    white-space: nowrap;
 }
 
 h3 {

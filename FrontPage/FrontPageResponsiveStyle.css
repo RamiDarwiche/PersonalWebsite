@@ -9,9 +9,7 @@
 }
 
 @media screen and (max-width: 533px) {
-    /* TODO: adjust this font change shenanigan */
     #pageTitle{margin-top: 2vh; font-size: 7vw; width: fit-content; white-space: nowrap;}
-    .hidden > button > img {height: auto;width: 7.5vw;}
 }
 
 @media screen and (max-width: 800px) {

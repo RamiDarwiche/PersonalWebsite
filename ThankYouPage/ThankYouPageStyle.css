@@ -67,8 +67,7 @@ nav {
 }
 
 .hidden > button > img {
-    height: auto;
-    width: 4.5vw;
+    width: 60%;
 }
 
 .mobileNav {
@@ -79,14 +78,15 @@ nav {
 }
 
 .mobileNavItem {
-    font-size: 2.5vw;
-    margin: 0.5% 40%;
+    font-size: 2rem;
+    margin: 0.5% 30%;
 }
 
 #pageTitle{
     letter-spacing: 0.1rem;
-    font-size: 3.5vw;
+    font-size: 2.5rem;
     font-weight: 800;
+    white-space: nowrap;
     pointer-events: none;
     user-select: none;
 }

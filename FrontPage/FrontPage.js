@@ -21,7 +21,6 @@ $(document).ready(function() {
     $(".icon").click(function() {
         if($('.mobileNav').css('display') === 'none') {
             $( ".mobileNav" ).slideDown( "slow");
-            console.log("reached")
         }
         else if($('.mobileNav').css('display') === 'flex') {
             $( ".mobileNav" ).slideUp( "slow");

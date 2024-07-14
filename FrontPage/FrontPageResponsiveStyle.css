@@ -9,8 +9,9 @@
 }
 
 @media screen and (max-width: 533px) {
-    .headerNav{flex-direction: column; justify-content: center;} 
-    #pageTitle{margin-top: 2vh;}   
+    #pageTitle{margin-top: 2vh; font-size: 7vw; width: fit-content; white-space: nowrap;}
+    .hidden > button > img {height: auto;width: 7.5vw;}
+
 }
 
 @media screen and (max-width: 800px) {

@@ -79,7 +79,7 @@ section li a:hover, section + li a:hover, button:hover, #git > a:hover, h2 > a:h
 
 .mobileNavItem {
     font-size: 2rem;
-    margin: 0.5% 30%;
+    margin: 0.5% 20%;
 }
 
 #pageTitle{

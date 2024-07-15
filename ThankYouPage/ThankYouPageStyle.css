@@ -102,6 +102,7 @@ li, #git, h2, h3, p, h1 {
     color: white;
     font-family: "DM Sans", sans-serif;
     list-style: none;
+    text-align: center;
 }
 
 h1 {

@@ -20,15 +20,14 @@ time, mark, audio, video, button {
 	vertical-align: baseline;
 }
 
-body{
-    min-width: 100%;
-    min-height: 100%;
+* {
+    box-sizing: border-box;
 }
 
 /* Start header styling */
 header {
     min-height: 8.75vh;
-    padding-top: 1.5vh;
+    padding-top: 1.9vh;
     background-color: #040315;
 }
 
@@ -43,21 +42,14 @@ section li a:hover, section + li a:hover, button:hover, .mobileNavItem > a:hover
     color: grey;
 }
 
-.fullNav {
-    height: 100%;
-    max-width: 100%;
-    text-align: center;
-    user-select: none;
-}
-
 .headerNav {
     margin: 0 1vw;
+    min-width: 0;
     display: flex;
     height: 100%;
-    min-width: 0;
     flex-direction: row;
-    align-items: center;
     flex-wrap: none;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -69,7 +61,6 @@ section li a:hover, section + li a:hover, button:hover, .mobileNavItem > a:hover
 li {
     min-width: 0;
     display: inline-block;
-    min-height: 0;
     padding: 0 1rem;
     font-size: 2.8rem;
     color: white;
@@ -82,16 +73,18 @@ li {
     pointer-events: all;
     align-self: center;
     min-width: 0;
+    padding-top: 1vh;
     margin-right: 1vw;
-    margin-top: 3vh;
+    margin-top: 1.1vh;
 }
 
 .hidden > button > img {
     width: 60%;
 }
 
+
 .mobileNav {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
@@ -99,7 +92,7 @@ li {
 
 .mobileNavItem {
     font-size: 2rem;
-    margin: 0.5% 20%;
+    margin: 0.5% 21%;
 }
 
 #pageTitle{

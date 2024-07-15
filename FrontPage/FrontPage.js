@@ -25,23 +25,17 @@ $(document).ready(function() {
             'slow');
     });
 
-    if(viewportWidth < 1415) {
-        $('.mobileNav').hide()
-    }
-
-
     // TODO: fix mobile nav bar still appearing after page expanded
     // TODO: finish mobile navigation menu
     $(".icon").click(function() {
         if($('.mobileNav').css('display') === 'none') {
-            $( ".mobileNav" ).slideDown( "slow");
+            $(".mobileNav" ).slideDown( "slow").css("display", "flex");
             $("#icon").animateRotate(0, 90, 200, 'linear', function () {});
 
         }
         else if($('.mobileNav').css('display') === 'flex') {
-            $( ".mobileNav" ).slideUp( "slow");
+            $(".mobileNav" ).slideUp( "slow");
             $("#icon").animateRotate(90, 0, 200, 'linear', function () {});
-
         }
     });
 

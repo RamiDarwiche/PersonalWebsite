@@ -34,7 +34,7 @@ $(document).ready(function() {
     // TODO: finish mobile navigation menu
     $(".icon").click(function() {
         if($('.mobileNav').css('display') === 'none') {
-            $( ".mobileNav" ).slideDown( "slow");
+            $(".mobileNav" ).slideDown( "slow").css("display", "flex");
             $("#icon").animateRotate(0, 90, 200, 'linear', function () {});
         }
         else if($('.mobileNav').css('display') === 'flex') {

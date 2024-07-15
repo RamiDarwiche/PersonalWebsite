@@ -20,7 +20,7 @@ $(document).ready(function() {
     var viewportWidth = $(window).width()
 
 
-    $(".toAbout").click(function() {
+    $("#toAbout").click(function() {
         window.location.href = "../index.html#about";
         // TODO: redirect to front page then slow scroll to about
         scrollToAbout();
@@ -34,7 +34,7 @@ $(document).ready(function() {
     // TODO: finish mobile navigation menu
     $(".icon").click(function() {
         if($('.mobileNav').css('display') === 'none') {
-            $( ".mobileNav" ).slideDown( "slow");
+            $(".mobileNav" ).slideDown( "slow").css("display", "flex");
             $("#icon").animateRotate(0, 90, 200, 'linear', function () {});
 
         }

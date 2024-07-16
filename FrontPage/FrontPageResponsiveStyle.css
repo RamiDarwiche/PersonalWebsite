@@ -14,7 +14,7 @@
     #pageTitle{margin-top: 2vh; font-size: 7vw; width: fit-content; white-space: nowrap;}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
     .about{flex-wrap: wrap; align-items: center; justify-content: center;}
     .about > section {width: 100%;}
     .about > section + section {width: 100; padding-bottom: 2vh;}

@@ -19,13 +19,6 @@ $.fn.animateRotate = function(start, angle, duration, easing, complete) {
 $(document).ready(function() {
     var viewportWidth = $(window).width()
 
-
-    $("#toAbout").click(function() {
-        window.location.href = "../index.html#about";
-        // TODO: redirect to front page then slow scroll to about
-        scrollToAbout();
-    });
-
     if(viewportWidth < 1415) {
         $('.mobileNav').hide()
     }

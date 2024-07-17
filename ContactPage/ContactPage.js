@@ -23,8 +23,6 @@ $(document).ready(function() {
         $('.mobileNav').hide()
     }
 
-    // TODO: fix mobile nav bar still appearing after page expanded
-    // TODO: finish mobile navigation menu
     $(".icon").click(function() {
         if($('.mobileNav').css('display') === 'none') {
             $(".mobileNav" ).slideDown( "slow").css("display", "flex");

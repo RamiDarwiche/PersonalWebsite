@@ -166,12 +166,13 @@ p {
     width: auto;
     padding: 8vh 0;
     background-color: #04001B;
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-     border-top: #110a34 1px solid;
+    border-top: #110a34 1px solid;
 }
 
 .projects > section {
@@ -211,3 +212,25 @@ footer ul img {
 }
 
 /* end footer */
+
+/* scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #04001B; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+  }

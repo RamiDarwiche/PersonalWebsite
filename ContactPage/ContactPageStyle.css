@@ -10,7 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video, button {
+time, mark, audio, video, button, textarea{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -182,6 +182,8 @@ form {
 
 #message {
     padding-bottom: 6rem;
+    max-height: 16vh;
+    resize: none;
 }
 
 #send {
@@ -199,7 +201,8 @@ form {
 }
 
 #send:hover {
-    color: gray;
+    color: lightgray;
+    background-color: #1f125f;
 }
 /* begin footer */
 
@@ -228,3 +231,25 @@ footer ul img {
     width: 48px;
     height: auto;
 }
+
+/* scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #04001B; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+  }

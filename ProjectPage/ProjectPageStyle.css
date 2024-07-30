@@ -92,7 +92,7 @@ section li a:hover, section + li a:hover, button:hover, #git > a:hover, h2 > a:h
     cursor: pointer;
 }
 
-li, #git, h2, h3, p {
+li, #git, h2, h3, p, h1 {
     min-width: 0;
     display: inline-block;
     padding: 0 1rem;
@@ -178,7 +178,7 @@ body > section {
 }
 
 .projectCluster {
-    vertical-align: center;
+    /* vertical-align: center; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -186,6 +186,12 @@ body > section {
     margin: 5vh 0 0 0;
     width: 75%;
     height: auto
+}
+
+
+h1 {
+    user-select: none;
+    pointer-events: none;
 }
 
 .project {
@@ -204,6 +210,20 @@ body > section {
     width: 52%;
     background-color: #040315;
 } 
+
+.break {
+    flex-basis: 100%;
+    width: 0;
+}
+
+h1 + .break {
+    margin-top: 1vh;
+    border-bottom: solid 1px white;
+}
+
+.past {
+    margin-top: 4vh;
+}
 
 /* begin footer */
 

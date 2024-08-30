@@ -1,116 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Rami Darwiche | Projects</title>
-    <link rel="stylesheet" href="ProjectPageStyle.css">
-    <link rel="stylesheet" href="ProjectPageResponsiveStyle.css">
+    <link rel="stylesheet" href="ProjectPageStyle.css" />
+    <link rel="stylesheet" href="ProjectPageResponsiveStyle.css" />
     <script src="../jquery-3.7.1.min.js"></script>
     <script src="ProjectPage.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="headerNav">
-                <li id="pageTitle"><a href="../index.html">Rami Darwiche</a></li>
-                <section>
-                    <li class="navItem"><a href="../index.html">Home</a></li>
-                    <li class="navItem"><a href="#">Projects</a></li>
-                    <li class="navItem"><a href="https://rami.watsonrealtycorp.com/">Real Estate</a></li>
-                </section>
-                <li class="navItem"><a id="contact" href="../ContactPage/ContactPage.html">Contact</a></li>
-                <li class="hidden"> 
-                    <button class="icon"><img id="icon" src="../images/navmenu.png" alt=""></button>
-                </li>
-            </ul>
-        </nav>
-        <nav class="smallNav">
-            <ul class="mobileNav">
-                <li class="mobileNavItem"><a href="../index.html">Home</a></li>
-                <li class="mobileNavItem"><a href="#">Projects</a></li>
-                <li class="mobileNavItem"><a href="https://rami.watsonrealtycorp.com/">Real Estate</a></li>
-                <li class="mobileNavItem"><a id="contact" href="../ContactPage/ContactPage.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="headerNav">
+          <li id="pageTitle"><a href="../index.html">Rami Darwiche</a></li>
+          <section>
+            <li class="navItem"><a href="../index.html">Home</a></li>
+            <li class="navItem"><a href="#">Projects</a></li>
+            <li class="navItem">
+              <a href="https://rami.watsonrealtycorp.com/">Real Estate</a>
+            </li>
+          </section>
+          <li class="navItem">
+            <a id="contact" href="../ContactPage/ContactPage.html">Contact</a>
+          </li>
+          <li class="hidden">
+            <button class="icon">
+              <img id="icon" src="../images/navmenu.png" alt="" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <nav class="smallNav">
+        <ul class="mobileNav">
+          <li class="mobileNavItem"><a href="../index.html">Home</a></li>
+          <li class="mobileNavItem"><a href="#">Projects</a></li>
+          <li class="mobileNavItem">
+            <a href="https://rami.watsonrealtycorp.com/">Real Estate</a>
+          </li>
+          <li class="mobileNavItem">
+            <a id="contact" href="../ContactPage/ContactPage.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section>
-        <section class="projectCluster">
-            <h1>Ongoing Projects</h1>
-            <div class="break"></div>
-            <section class="project">
-                <h2 class="projTitle"><a href="https://github.com/RamiDarwiche/BrowserProject">Browser Project</a></h2>
-                <div>
-                    <a href="https://github.com/RamiDarwiche/BrowserProject"><img src="../images/browserproject.jpg" alt=""></a>
-                </div>
-                <h3>Python</h3>
-                <p>A rudimentary browser created in python using tkinter. This browser emulates the very basic functions of a modern browser, such as sending HTTP requests, managing HTTP responses, organizing HTML, and drawing page content.</p>
-            </section>
-            <section class="project">
-                <h2 class="projTitle"><a href="https://github.com/RamiDarwiche/PersonalWebsite">Personal Website</a></h2>
-                <div>
-                    <a href="https://github.com/RamiDarwiche/PersonalWebsite"><img src="../images/personalwebsite.jpg" alt=""></a>
-                </div>
-                <h3>HTML | CSS | JS</h3>
-                <p>This is the Github repository for the current code of this website written in pure HTML, CSS, and JavaScript. It is my first major project in web design and serves as my testing area for applying new knowledge and skills.</p>
-            </section>
-            <div class="break"></div>
-            
-            <h1 class="past">Past Projects</h1>
-            <div class="break"></div>
-            <section class="project">
-                <h2 class="projTitle"><a href="https://github.com/RamiDarwiche/DroneProject/tree/main">Drone Project</a></h2>
-                <div>
-                    <a href="https://github.com/RamiDarwiche/DroneProject/tree/main"><img src="../images/droneproject.jpg" alt=""></a>
-                </div>
-                <h3>Python | C# | Unreal Engine | SQL</h3>
-                <p>Created in the spring semester of my freshman year for a research course, this project explored using hand gestures for drone flight in construction management. 
-                    I created a machine learning model using thousands of original images and Google's Teachable Machine to recognize hand gestures for flight controls. The final version of this project was rendered in 
-                    Unreal Engine using SQLite as a medium between Python and C#.</p>
-            </section>
-            <section class="project">
-                <h2 class="projTitle"><a href="https://github.com/RamiDarwiche/DigitalTwinProject">Digital Twin Project</a></h2>
-                <div>
-                    <a href="https://github.com/RamiDarwiche/DigitalTwinProject"><img src="../images/DigitalTwin.jpg" alt=""></a>
-                </div>
-                <h3>Python | MQTT | Unreal Engine</h3>
-                <p>A project exploring the applications of machine learning to anomaly detection in construction management. A spreadsheet of over 260,000 mock data points were used to emulate real-time data that
-                    served as the basis for the machine learning model. The model was trained to spot anomalies recorded from an HVAC IoT sensor. MQTTX was then used to serve as an information broker from Python to Unreal,
-                    where an HVAC system was simulated for testing. 
-                </p>
-            </section>
+      <section class="projectCluster">
+        <h1>Ongoing Projects</h1>
+        <div class="break"></div>
+        <section class="project">
+          <h2 class="projTitle">
+            <a href="https://github.com/RamiDarwiche/PersonalWebsite"
+              >NexHome</a
+            >
+          </h2>
+          <div>
+            <a href="https://github.com/RamiDarwiche/NexHome"
+              ><img src="../images/NexHome.jpg" alt=""
+            /></a>
+          </div>
+          <h3>MERN | Vite | Tailwindcss | Auth0 | Stripe</h3>
+          <p>
+            NexHome is a SaaS real estate communications solution that removes
+            confusion from client/agent interactions. It is fullstack web app
+            that utilizes the MERN stack and additional technologies to achieve
+            its functionality.
+          </p>
         </section>
-        <section>
-            <h2 id="git">Interested in seeing more? Visit my 
-                <a href="https://github.com/RamiDarwiche">Github</a>!</h2>
+        <section class="project">
+          <h2 class="projTitle">
+            <a href="https://github.com/RamiDarwiche/BrowserProject"
+              >Browser Project</a
+            >
+          </h2>
+          <div>
+            <a href="https://github.com/RamiDarwiche/BrowserProject"
+              ><img src="../images/browserproject.jpg" alt=""
+            /></a>
+          </div>
+          <h3>Python</h3>
+          <p>
+            A rudimentary browser created in python using tkinter. This browser
+            emulates the very basic functions of a modern browser, such as
+            sending HTTP requests, managing HTTP responses, organizing HTML, and
+            drawing page content.
+          </p>
         </section>
+        <section class="project">
+          <h2 class="projTitle">
+            <a href="https://github.com/RamiDarwiche/PersonalWebsite"
+              >Personal Website</a
+            >
+          </h2>
+          <div>
+            <a href="https://github.com/RamiDarwiche/PersonalWebsite"
+              ><img src="../images/personalwebsite.jpg" alt=""
+            /></a>
+          </div>
+          <h3>HTML | CSS | JS</h3>
+          <p>
+            This is the Github repository for the current code of this website
+            written in pure HTML, CSS, and JavaScript. It is my first major
+            project in web design and serves as my testing area for applying new
+            knowledge and skills.
+          </p>
+        </section>
+
+        <div class="break"></div>
+
+        <h1 class="past">Past Projects</h1>
+        <div class="break"></div>
+        <section class="project">
+          <h2 class="projTitle">
+            <a href="https://github.com/RamiDarwiche/DroneProject/tree/main"
+              >Drone Project</a
+            >
+          </h2>
+          <div>
+            <a href="https://github.com/RamiDarwiche/DroneProject/tree/main"
+              ><img src="../images/droneproject.jpg" alt=""
+            /></a>
+          </div>
+          <h3>Python | C# | Unreal Engine | SQL</h3>
+          <p>
+            Created in the spring semester of my freshman year for a research
+            course, this project explored using hand gestures for drone flight
+            in construction management. I created a machine learning model using
+            thousands of original images and Google's Teachable Machine to
+            recognize hand gestures for flight controls. The final version of
+            this project was rendered in Unreal Engine using SQLite as a medium
+            between Python and C#.
+          </p>
+        </section>
+        <section class="project">
+          <h2 class="projTitle">
+            <a href="https://github.com/RamiDarwiche/DigitalTwinProject"
+              >Digital Twin Project</a
+            >
+          </h2>
+          <div>
+            <a href="https://github.com/RamiDarwiche/DigitalTwinProject"
+              ><img src="../images/DigitalTwin.jpg" alt=""
+            /></a>
+          </div>
+          <h3>Python | MQTT | Unreal Engine</h3>
+          <p>
+            A project exploring the applications of machine learning to anomaly
+            detection in construction management. A spreadsheet of over 260,000
+            mock data points were used to emulate real-time data that served as
+            the basis for the machine learning model. The model was trained to
+            spot anomalies recorded from an HVAC IoT sensor. MQTTX was then used
+            to serve as an information broker from Python to Unreal, where an
+            HVAC system was simulated for testing.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2 id="git">
+          Interested in seeing more? Visit my
+          <a href="https://github.com/RamiDarwiche">Github</a>!
+        </h2>
+      </section>
     </section>
     <footer>
-        <ul>
-            <li>
-                <a href="https://github.com/RamiDarwiche">
-                    <img src="../images/github.png" alt="">   
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/rami-darwiche-aaa663228/">
-                    <img src="../images/linkedin.png" alt="">   
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/ramirealty/">
-                    <img src="../images/instagram.png" alt="">   
-                </a>
-            </li>
-            <li>
-                <a href="https://x.com/RamiADarwiche">
-                    <img src="../images/twitter.png" alt="">   
-                </a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="https://github.com/RamiDarwiche">
+            <img src="../images/github.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/rami-darwiche-aaa663228/">
+            <img src="../images/linkedin.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ramirealty/">
+            <img src="../images/instagram.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/RamiADarwiche">
+            <img src="../images/twitter.png" alt="" />
+          </a>
+        </li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>

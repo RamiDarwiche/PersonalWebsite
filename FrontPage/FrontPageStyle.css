@@ -93,6 +93,15 @@ button {
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 /* Start header styling */
 header {
   min-height: 8.75vh;
@@ -180,7 +189,6 @@ li {
 .landingImage,
 .landingImage > img {
   width: 100%;
-  height: 100%;
   background-color: #04001b;
 }
 

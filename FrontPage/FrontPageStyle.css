@@ -93,15 +93,9 @@ button {
   box-sizing: border-box;
 }
 
-html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+  min-height: 100vh;
 }
-
 /* Start header styling */
 header {
   min-height: 8.75vh;
@@ -185,6 +179,11 @@ li {
   user-select: none;
 }
 /* End header styling */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
 .landingImage,
 .landingImage > img {
@@ -194,12 +193,13 @@ li {
 
 .about {
   display: flex;
-  min-height: auto;
-  width: auto;
+  min-height: 70vh;
+  width: 100%;
   background-color: #04001b;
 }
 .about > section {
   align-items: center;
+  align-content: center;
   justify-content: center;
   flex-grow: 1;
   width: 50%;

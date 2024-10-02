@@ -1,214 +1,294 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, button {
-	margin: 0;
-	padding: 0;
-	border: 0;
-    background: none;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
-    min-height: 8.75vh;
-    padding-top: 1.9vh;
-    background-color: #040315;
+  min-height: 8.75vh;
+  padding-top: 1.9vh;
+  background-color: #040315;
 }
 
-header a, button, h2 > a {
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
+header a,
+button,
+h2 > a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
-section li a:hover, section + li a:hover, button:hover, #git > a:hover, h2 > a:hover, .mobileNavItem > a:hover, button > a:hover {
-    color: grey;
+section li a:hover,
+section + li a:hover,
+button:hover,
+#git > a:hover,
+h2 > a:hover,
+.mobileNavItem > a:hover,
+button > a:hover {
+  color: grey;
 }
 
 nav {
-    height: 100%;
-    user-select: none;
+  height: 100%;
+  user-select: none;
 }
 
 .headerNav {
-    margin: 0 1vw;
-    min-width: 0;
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  margin: 0 1vw;
+  min-width: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .headerNav > section {
-    margin-right: 10.3rem;
+  margin-right: 8.9rem;
 }
 
 .hidden {
-    margin-top: 1vh;
-    display: none;
-    pointer-events: all;
-    align-self: center;
-    margin-right: 1vw;
-    margin-top: 1.1vh;
-    padding-top: 1vh;
+  margin-top: 1vh;
+  display: none;
+  pointer-events: all;
+  align-self: center;
+  margin-right: 1vw;
+  margin-top: 1.1vh;
+  padding-top: 1vh;
 }
 
 .hidden > button > img {
-    width: 60%;
+  width: 60%;
 }
 
 .mobileNav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .mobileNavItem {
-    font-size: 2rem;
-    margin: 0.5% 21%;
+  font-size: 2rem;
+  margin: 0.5% 21%;
 }
 
-#pageTitle{
-    letter-spacing: 0.1rem;
-    font-size: 2.5rem;
-    font-weight: 800;
-    white-space: nowrap;
-    user-select: none;
-    cursor: pointer;
+#pageTitle {
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
 }
 
-li, #git, h2, h3, p, h1 {
-    display: inline-block;
-    padding: 0 1rem;
-    font-size: 2.8rem;
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    list-style: none;
-    text-align: center;
+li,
+#git,
+h2,
+h3,
+p,
+h1 {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 2.8rem;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+  text-align: center;
 }
 
 h1 {
-    padding: 0;
+  padding: 0;
 }
 
 /* end header */
 p > a {
-    text-decoration: none;
-    color: lightblue;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
+  text-decoration: none;
+  color: lightblue;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
 p > a:hover {
-    color: grey;
+  color: grey;
 }
 
-
 body {
-    position: relative;
-    background-color: #040315;
-    width: auto;
-    height: auto;
+  position: relative;
+  background-color: #040315;
+  width: auto;
+  height: auto;
 }
 
 body > section {
-    /* TODO: adjust height later */
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  /* TODO: adjust height later */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .thankYou {
-    margin-top: 20vh;
-    min-height: 56.2vh;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  margin-top: 20vh;
+  min-height: 56.2vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 h1 {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
-    font-size: 2rem;
-    padding-bottom: 5rem;
+  font-size: 2rem;
+  padding-bottom: 5rem;
 }
 
 p {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-
 
 /* begin footer */
 
 footer {
-    /* TODO: get around flexbox bug with using min-height instead of height */
-    height: 15vh;
-    width: 100%;
-    background-color: #04001B;
-    border-top: #110a34 1px solid;
-    margin-top: auto;
+  /* TODO: get around flexbox bug with using min-height instead of height */
+  height: 15vh;
+  width: 100%;
+  background-color: #04001b;
+  border-top: #110a34 1px solid;
+  margin-top: auto;
 }
 
 footer > ul {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 footer li {
-    padding: 0 0.2em;
+  padding: 0 0.2em;
 }
 
 ul img {
-    width: 48px;
-    height: auto;
+  width: 48px;
+  height: auto;
 }
 
 /* scrollbar styling */
 
 ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #04001B; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: gray; 
-  }
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #04001b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}

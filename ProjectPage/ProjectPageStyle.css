@@ -112,7 +112,7 @@ section li a:hover,
 section + li a:hover,
 button:hover,
 #git > a:hover,
-#nexHomeLink:hover,
+.paragraphLink:hover,
 h2 > a:hover,
 .mobileNavItem > a:hover,
 button > a:hover {
@@ -229,7 +229,7 @@ p {
 }
 
 #git > a,
-#nexHomeLink {
+.paragraphLink {
   text-decoration: none;
   color: lightblue;
   transition: all 0.3s ease 0s;
